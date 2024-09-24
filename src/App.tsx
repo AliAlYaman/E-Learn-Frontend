@@ -1,11 +1,11 @@
-import './index.css'
+import './index.css';  
+import Registration from './pages/Auth/Registration';
 function App() {
   return (
     
-    <div className="flex items-center justify-center h-screen bg-gray-800">
-      <h1 className="text-4xl font-bold text-white">
-        Hello Tailwind with React and Vite!
-      </h1>
+    <div className="">
+      <Registration/>
+     
     </div>
   );
 }

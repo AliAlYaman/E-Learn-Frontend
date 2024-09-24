@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --primary-color:#DFDCDC;
+    --secondary-color:#49BBBD;
+    --background-color:#252641;
+    --text-color:#2F327D;
+    --styling:#F48C06;
+    --gradient:linear-gradient(135deg, #49BBBD, #252641);
+
+}
+body{
+    background: var(--primary-color);
+}
+
+/* In your CSS file */
+.btn-gradient {
+    background: linear-gradient(to right, #00CBB8, #F48C06); /* Example gradient */
+}
