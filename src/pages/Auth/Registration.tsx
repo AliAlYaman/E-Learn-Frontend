@@ -1,8 +1,10 @@
 import { useState } from "react"
 import signIn from "../../assets/signIn.jpeg"
 import signUp from "../../assets/signup.jpg"
-import In from "../../components/auth/in";
+import In from "../../components/auth/In";
 import Up from "../../components/auth/Up";
+import Container from '@mui/material/Container';
+import "../../index.css"
 
 
 function Registration() {
@@ -17,16 +19,18 @@ function Registration() {
     }
 
     return (
+        <Container maxWidth="xl">
         <div
             className='flex items-center justify-center min-h-screen py-10 sm:py-40 '>
             <div className=' flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-3xl mx-auto shadow-lg overflow-hidden'>
                 {/* Image Container */}
                 <div
-    className={`w-full lg:w-1/2 flex items-center justify-center p-0 bg-no-repeat bg-cover bg-center rounded-2xl`}
+    className={`w-full lg:w-1/2 flex items-center justify-center p-0 bg-no-repeat bg-cover bg-center rounded-2xl max-w-fill-available`}
     style={{
         backgroundImage: `url(${isSignIn ? signIn : signUp})`,
         minHeight: '300px', // Adjust this as needed
         margin: '20px',
+        
     }}
 >
     {/* Background image is set here */}
@@ -57,6 +61,7 @@ function Registration() {
                 </div>
             </div>
         </div>
+        </Container>
     )
 }
 

@@ -19,3 +19,7 @@ body{
 .btn-gradient {
     background: linear-gradient(to right, #00CBB8, #F48C06); /* Example gradient */
 }
+.max-w-fill-available {
+    max-width: -webkit-fill-available;
+}
+
